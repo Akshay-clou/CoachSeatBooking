@@ -1,0 +1,28 @@
+<div class="card bg-success text-center p-3">
+  <h3> Train Booking Portal</h3>
+</div>
+<div class="card row text-center m-2">
+  <div class="row ">
+    <div class="col-sm-8 m-auto">
+      <form (ngSubmit)="onSubmit(f.value)" #f="ngForm" ngNativeValidate>
+        <div class="form-group">
+          <label for="seats" class="text-primary">
+            <h4>Enter Number of Seats :</h4></label
+          >
+          <input
+            type="number"
+            id="seats"
+            class="form-control"
+            ngModel
+            name="noSeats"
+            max='7'
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-outline-success">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<app-coach [seats]="seats" #child></app-coach>

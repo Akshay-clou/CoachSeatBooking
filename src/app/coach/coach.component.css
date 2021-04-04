@@ -1,0 +1,11 @@
+
+  .container{
+    background-color: aliceblue;
+    border:1px solid black
+    }
+
+ .card{
+    margin: auto;
+    /* display: inline; */
+
+}
